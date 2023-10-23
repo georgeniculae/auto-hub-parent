@@ -15,7 +15,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>car-rental-parent</name>
+    <name>Car Rental Parent</name>
     <description>Parent for Car Rental Microservices</description>
 
     <properties>
