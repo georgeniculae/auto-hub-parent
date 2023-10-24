@@ -29,13 +29,17 @@
         <spring-boot.version>3.1.4</spring-boot.version>
         <spring-cloud-dependencies.version>2022.0.2</spring-cloud-dependencies.version>
         <spring-cloud-stream.version>4.0.4</spring-cloud-stream.version>
+        <netflix-eventbus.version>0.3.0</netflix-eventbus.version>
 
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <openapi-generator.version>7.0.1</openapi-generator.version>
 
+        <liquibase.version>4.22.0</liquibase.version>
+
         <poi.version>5.2.4</poi.version>
 
         <swagger-annotations.version>2.2.16</swagger-annotations.version>
+        <springdoc-openapi-starter-webmvc-ui.version>2.2.0</springdoc-openapi-starter-webmvc-ui.version>
 
         <apache-commons.version>3.13.0</apache-commons.version>
 
@@ -52,7 +56,61 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Messaging dependencies -->
+            <!-- Spring dependencies -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-security</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>com.netflix.netflix-commons</groupId>
+                <artifactId>netflix-eventbus</artifactId>
+                <version>${netflix-eventbus.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+            </dependency>
+            <!-- END: Spring dependencies -->
+
+            <!-- Database dependencies -->
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+            </dependency>
+            <!-- END: Database dependencies -->
+
+            <!-- Database migration dependencies -->
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>${liquibase.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
+            </dependency>
+            <!-- END: Database migration dependencies -->
+
+            <!-- Spring Cloud dependencies -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -68,7 +126,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- END: Messaging dependencies -->
+            <!-- END: Spring Cloud dependencies -->
 
             <!-- Code generation -->
             <dependency>
@@ -99,10 +157,24 @@
             </dependency>
             <!-- END: Apache POI -->
 
+            <!-- Metrics dependencies -->
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-registry-prometheus</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+            <!-- END: Metrics dependencies -->
+
             <dependency>
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-annotations</artifactId>
                 <version>${swagger-annotations.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc-openapi-starter-webmvc-ui.version}</version>
             </dependency>
 
             <dependency>
