@@ -38,29 +38,29 @@ services:
       SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8084
 
   keycloak:
-      image: quay.io/keycloak/keycloak:legacy
-      environment:
-        DB_VENDOR: POSTGRES
-        DB_ADDR: postgres
-        DB_DATABASE: keycloak
-        DB_USER: keycloak
-        DB_SCHEMA: public
-        DB_PASSWORD: password
-        KEYCLOAK_USER: admin
-        KEYCLOAK_PASSWORD: admin
-      ports:
-        - 8080:8080
-      depends_on:
-        - postgres
-    
+    image: quay.io/keycloak/keycloak:legacy
+    environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: postgres
+      DB_DATABASE: keycloak
+      DB_USER: keycloak
+      DB_SCHEMA: public
+      DB_PASSWORD: password
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
   postgres:
-      image: postgres:latest
-      volumes:
-        - ./postgres_data:/etc/lib/postgresql/data
-      environment:
-        POSTGRES_DB: keycloak
-        POSTGRES_USER: keycloak
-        POSTGRES_PASSWORD: password
+    image: postgres:latest
+    volumes:
+      - ./postgres_data:/etc/lib/postgresql/data
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: password
 
   redis:
     image: redis:latest
@@ -80,11 +80,11 @@ services:
     image: prom/prometheus:latest
     container_name: prometheus
     ports:
-      - 9090:9090
+      - "9090:9090"
     restart: unless-stopped
     volumes:
-       - ./prometheus/prometheus.yml:/etc/prometheus_config/prometheus.yml
-      
+      - ./prometheus/prometheus.yml:/etc/prometheus_config/prometheus.yml
+
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
@@ -92,4 +92,4 @@ services:
       - "3000:3000"
     restart: unless-stopped
     volumes:
-       - ./grafana:/etc/grafana/provisioning/datasources
+      - ./grafana:/etc/grafana/provisioning/datasources
