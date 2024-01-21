@@ -5,18 +5,18 @@
 
     <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>3.1.4</version>
-        <relativePath />
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.1</version>
+        <relativePath/>
     </parent>
 
-    <groupId>com.carrental</groupId>
-    <artifactId>car-rental-parent</artifactId>
+    <groupId>com.swftwheelshub</groupId>
+    <artifactId>swift-wheels-hub-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Car Rental Parent</name>
-    <description>Parent for Car Rental Microservices</description>
+    <name>Swift Wheels Hub Parent</name>
+    <description>Parent for Swift Wheels Hub Microservices</description>
 
     <properties>
         <java.version>21</java.version>
@@ -26,8 +26,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-boot.version>3.1.4</spring-boot.version>
-        <spring-cloud-dependencies.version>2022.0.2</spring-cloud-dependencies.version>
+        <spring-boot.version>3.2.1</spring-boot.version>
+        <spring-cloud-dependencies.version>2023.0.0</spring-cloud-dependencies.version>
         <spring-cloud-stream.version>4.0.4</spring-cloud-stream.version>
         <netflix-eventbus.version>0.3.0</netflix-eventbus.version>
 
@@ -264,15 +264,15 @@
     </repositories>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/georgeniculae/car-rental-parent</developerConnection>
+        <developerConnection>scm:git:https://github.com/georgeniculae/swift-wheels-hub-parent</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>car-rental-parent</name>
-            <url>https://maven.pkg.github.com/georgeniculae/car-rental-parent</url>
+            <name>swift-wheels-hub-parent</name>
+            <url>https://maven.pkg.github.com/georgeniculae/swift-wheels-hub-parent</url>
         </repository>
     </distributionManagement>
 
