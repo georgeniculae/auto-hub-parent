@@ -37,6 +37,9 @@
 
         <poi.version>5.2.5</poi.version>
 
+        <keycloak-client.version>23.0.4</keycloak-client.version>
+        <resteasy-client.version>6.2.8.Final</resteasy-client.version>
+
         <springdoc-openapi-starter-webmvc-ui.version>2.4.0</springdoc-openapi-starter-webmvc-ui.version>
     </properties>
 
@@ -101,6 +104,26 @@
                 <version>${debezium.version}</version>
             </dependency>
             <!-- END: Debezium dependencies -->
+
+            <!-- Keycloak integration dependencies -->
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-admin-client</artifactId>
+                <version>${keycloak-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-client</artifactId>
+                <version>${resteasy-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jackson2-provider</artifactId>
+                <version>${resteasy-client.version}</version>
+            </dependency>
+            <!-- END: Keycloak integration dependencies -->
 
             <!-- Swagger documentation dependency-->
             <dependency>
