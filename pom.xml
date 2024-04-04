@@ -41,6 +41,8 @@
         <resteasy-client.version>6.2.8.Final</resteasy-client.version>
 
         <springdoc-openapi-starter-webmvc-ui.version>2.4.0</springdoc-openapi-starter-webmvc-ui.version>
+
+        <mustache.version>0.9.11</mustache.version>
     </properties>
 
     <dependencyManagement>
@@ -125,13 +127,21 @@
             </dependency>
             <!-- END: Keycloak integration dependencies -->
 
-            <!-- Swagger documentation dependency-->
+            <!-- Swagger documentation dependency -->
             <dependency>
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
                 <version>${springdoc-openapi-starter-webmvc-ui.version}</version>
             </dependency>
             <!-- END: Swagger documentation dependency -->
+
+            <!-- Mustache dependency -->
+            <dependency>
+                <groupId>com.github.spullara.mustache.java</groupId>
+                <artifactId>compiler</artifactId>
+                <version>${mustache.version}</version>
+            </dependency>
+            <!-- END: Mustache dependency -->
         </dependencies>
     </dependencyManagement>
 
