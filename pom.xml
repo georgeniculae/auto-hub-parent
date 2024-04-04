@@ -43,6 +43,8 @@
         <springdoc-openapi-starter-webmvc-ui.version>2.4.0</springdoc-openapi-starter-webmvc-ui.version>
 
         <mustache.version>0.9.11</mustache.version>
+
+        <swagger-request-validator.version>2.40.0</swagger-request-validator.version>
     </properties>
 
     <dependencyManagement>
@@ -142,6 +144,14 @@
                 <version>${mustache.version}</version>
             </dependency>
             <!-- END: Mustache dependency -->
+
+            <!-- Atlassian Request Validator dependency -->
+            <dependency>
+                <groupId>com.atlassian.oai</groupId>
+                <artifactId>swagger-request-validator-core</artifactId>
+                <version>${swagger-request-validator.version}</version>
+            </dependency>
+            <!-- END: Atlassian Request Validator dependency -->
         </dependencies>
     </dependencyManagement>
 
