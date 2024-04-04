@@ -26,37 +26,23 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-boot.version>3.2.1</spring-boot.version>
+        <spring-boot.version>3.2.4</spring-boot.version>
         <spring-cloud-dependencies.version>2023.0.1</spring-cloud-dependencies.version>
-        <spring-cloud-stream.version>4.0.4</spring-cloud-stream.version>
-        <netflix-eventbus.version>0.3.0</netflix-eventbus.version>
-
-        <httpclient.version>4.5.14</httpclient.version>
 
         <mapstruct.version>1.5.5.Final</mapstruct.version>
 
         <liquibase.version>4.22.0</liquibase.version>
 
-        <debezium.version>2.3.0.Final</debezium.version>
+        <debezium.version>2.5.4.Final</debezium.version>
 
         <poi.version>5.2.5</poi.version>
 
         <springdoc-openapi-starter-webmvc-ui.version>2.4.0</springdoc-openapi-starter-webmvc-ui.version>
-
-        <apache-commons.version>3.13.0</apache-commons.version>
-
-        <snakeyaml.version>2.2</snakeyaml.version>
-
-        <sonar.exclusions>
-            **/config/**/*,
-            **/*Application.java,
-            **/model/**
-        </sonar.exclusions>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!-- Spring Cloud dependencies -->
+            <!-- Spring Cloud dependency -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -64,15 +50,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-stream-dependencies</artifactId>
-                <version>${spring-cloud-stream.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- END: Spring Cloud dependencies -->
+            <!-- END: Spring Cloud dependency -->
 
             <!-- Mapstruct dependency -->
             <dependency>
