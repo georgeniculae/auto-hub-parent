@@ -40,7 +40,7 @@
         <keycloak-client.version>23.0.4</keycloak-client.version>
         <resteasy-client.version>6.2.8.Final</resteasy-client.version>
 
-        <springdoc-openapi-starter-webmvc-ui.version>2.4.0</springdoc-openapi-starter-webmvc-ui.version>
+        <springdoc-openapi-starter-webmvc-ui.version>2.5.0</springdoc-openapi-starter-webmvc-ui.version>
 
         <mustache.version>0.9.11</mustache.version>
 
