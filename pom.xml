@@ -67,6 +67,26 @@
             </dependency>
             <!-- END: Mapstruct dependency -->
 
+            <!-- Keycloak integration dependencies -->
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-admin-client</artifactId>
+                <version>${keycloak-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-client</artifactId>
+                <version>${resteasy-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jackson2-provider</artifactId>
+                <version>${resteasy-client.version}</version>
+            </dependency>
+            <!-- END: Keycloak integration dependencies -->
+
             <!-- Database migration dependencies -->
             <dependency>
                 <groupId>org.liquibase</groupId>
@@ -74,20 +94,6 @@
                 <version>${liquibase.version}</version>
             </dependency>
             <!-- END: Database migration dependencies -->
-
-            <!-- Apache POI dependencies -->
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi</artifactId>
-                <version>${poi.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi-ooxml</artifactId>
-                <version>${poi.version}</version>
-            </dependency>
-            <!-- END: Apache POI dependencies -->
 
             <!-- Debezium dependencies -->
             <dependency>
@@ -109,25 +115,19 @@
             </dependency>
             <!-- END: Debezium dependencies -->
 
-            <!-- Keycloak integration dependencies -->
+            <!-- Apache POI dependencies -->
             <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-admin-client</artifactId>
-                <version>${keycloak-client.version}</version>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.jboss.resteasy</groupId>
-                <artifactId>resteasy-client</artifactId>
-                <version>${resteasy-client.version}</version>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>org.jboss.resteasy</groupId>
-                <artifactId>resteasy-jackson2-provider</artifactId>
-                <version>${resteasy-client.version}</version>
-            </dependency>
-            <!-- END: Keycloak integration dependencies -->
+            <!-- END: Apache POI dependencies -->
 
             <!-- Swagger documentation dependency -->
             <dependency>
