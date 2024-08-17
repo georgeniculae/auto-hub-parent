@@ -46,6 +46,7 @@
 
         <swagger-request-validator.version>2.41.0</swagger-request-validator.version>
         <p6spy.version>1.9.1</p6spy.version>
+        <caffeine.version>3.1.8</caffeine.version>
     </properties>
 
     <dependencyManagement>
@@ -171,6 +172,14 @@
                 <version>${p6spy.version}</version>
             </dependency>
             <!-- END: P6spy dependency -->
+
+            <!-- Caffeine dependency -->
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${caffeine.version}</version>
+            </dependency>
+            <!-- END: Caffeine dependency -->
         </dependencies>
     </dependencyManagement>
 
