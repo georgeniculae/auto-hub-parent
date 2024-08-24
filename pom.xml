@@ -29,23 +29,25 @@
         <spring-cloud-dependencies.version>2023.0.3</spring-cloud-dependencies.version>
         <spring-ai.version>1.0.0-M2</spring-ai.version>
 
-        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <mapstruct.version>1.6.0</mapstruct.version>
 
-        <liquibase.version>4.28.0</liquibase.version>
+        <liquibase.version>4.29.1</liquibase.version>
 
-        <debezium.version>2.7.0.Final</debezium.version>
+        <debezium.version>2.7.1.Final</debezium.version>
 
         <poi.version>5.3.0</poi.version>
 
         <keycloak-client.version>23.0.4</keycloak-client.version>
-        <resteasy-client.version>6.2.9.Final</resteasy-client.version>
+        <resteasy-client.version>6.2.10.Final</resteasy-client.version>
 
         <springdoc-openapi-starter-webmvc-ui.version>2.6.0</springdoc-openapi-starter-webmvc-ui.version>
 
         <mustache.version>0.9.14</mustache.version>
 
         <swagger-request-validator.version>2.41.0</swagger-request-validator.version>
+
         <p6spy.version>1.9.1</p6spy.version>
+
         <caffeine.version>3.1.8</caffeine.version>
     </properties>
 
