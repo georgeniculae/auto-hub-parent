@@ -27,7 +27,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <spring-cloud-dependencies.version>2023.0.3</spring-cloud-dependencies.version>
-        <spring-ai.version>1.0.0-M1</spring-ai.version>
+        <spring-ai.version>1.0.0-M2</spring-ai.version>
 
         <mapstruct.version>1.5.5.Final</mapstruct.version>
 
