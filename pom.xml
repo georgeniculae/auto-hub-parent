@@ -12,7 +12,7 @@
 
     <groupId>com.swiftwheelshub</groupId>
     <artifactId>swift-wheels-hub-parent</artifactId>
-    <version>0.0.8-SNAPSHOT</version>
+    <version>0.0.9-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Swift Wheels Hub Parent</name>
@@ -26,27 +26,27 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-cloud-dependencies.version>2023.0.3</spring-cloud-dependencies.version>
-        <spring-ai.version>1.0.0-M3</spring-ai.version>
+        <spring-cloud-dependencies.version>2023.0.4</spring-cloud-dependencies.version>
+        <spring-ai.version>1.0.0-M4</spring-ai.version>
 
-        <mapstruct.version>1.6.2</mapstruct.version>
+        <mapstruct.version>1.6.3</mapstruct.version>
 
-        <liquibase.version>4.29.2</liquibase.version>
+        <liquibase.version>4.30.2</liquibase.version>
 
-        <debezium.version>3.0.1.Final</debezium.version>
+        <debezium.version>3.0.4.Final</debezium.version>
 
         <poi.version>5.3.0</poi.version>
 
-        <keycloak-client.version>26.0.1</keycloak-client.version>
-        <resteasy-client.version>6.2.10.Final</resteasy-client.version>
+        <keycloak-client.version>26.0.3</keycloak-client.version>
+        <resteasy-client.version>6.2.11.Final</resteasy-client.version>
 
-        <springdoc-openapi-starter-webmvc-ui.version>2.6.0</springdoc-openapi-starter-webmvc-ui.version>
+        <springdoc-openapi-starter-webmvc-ui.version>2.7.0</springdoc-openapi-starter-webmvc-ui.version>
 
         <mustache.version>0.9.14</mustache.version>
 
         <swagger-request-validator.version>2.43.0</swagger-request-validator.version>
 
-        <p6spy.version>1.9.2</p6spy.version>
+        <p6spy.version>1.10.0</p6spy.version>
 
         <caffeine.version>3.1.8</caffeine.version>
     </properties>
