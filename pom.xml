@@ -31,7 +31,7 @@
 
         <mapstruct.version>1.6.3</mapstruct.version>
 
-        <liquibase.version>4.30.2</liquibase.version>
+        <liquibase.version>4.30.0</liquibase.version>
 
         <debezium.version>3.0.4.Final</debezium.version>
 
