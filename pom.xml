@@ -12,14 +12,14 @@
 
     <groupId>com.swiftwheelshub</groupId>
     <artifactId>swift-wheels-hub-parent</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>0.0.16-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Swift Wheels Hub Parent</name>
     <description>Parent for Swift Wheels Hub Microservices</description>
 
     <properties>
-        <java.version>24</java.version>
+        <java.version>23</java.version>
         <release>${java.version}</release>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
