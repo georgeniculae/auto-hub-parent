@@ -6,20 +6,20 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.4</version>
+        <version>3.4.5</version>
         <relativePath/>
     </parent>
 
     <groupId>com.swiftwheelshub</groupId>
     <artifactId>swift-wheels-hub-parent</artifactId>
-    <version>0.0.17-SNAPSHOT</version>
+    <version>0.0.18-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Swift Wheels Hub Parent</name>
     <description>Parent for Swift Wheels Hub Microservices</description>
 
     <properties>
-        <java.version>23</java.version>
+        <java.version>24</java.version>
         <release>${java.version}</release>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -27,17 +27,17 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <spring-cloud-dependencies.version>2024.0.1</spring-cloud-dependencies.version>
-        <spring-ai.version>1.0.0-M6</spring-ai.version>
+        <spring-ai.version>1.0.0-M7</spring-ai.version>
 
         <mapstruct.version>1.6.3</mapstruct.version>
 
         <liquibase.version>4.31.1</liquibase.version>
 
-        <debezium.version>3.0.8.Final</debezium.version>
+        <debezium.version>3.1.1.Final</debezium.version>
 
-        <poi.version>5.4.0</poi.version>
+        <poi.version>5.4.1</poi.version>
 
-        <keycloak-client.version>26.0.4</keycloak-client.version>
+        <keycloak-client.version>26.0.5</keycloak-client.version>
         <resteasy-client.version>6.2.12.Final</resteasy-client.version>
 
         <springdoc-openapi-starter-webmvc-ui.version>2.7.0</springdoc-openapi-starter-webmvc-ui.version>
@@ -46,7 +46,7 @@
 
         <swagger-request-validator.version>2.44.1</swagger-request-validator.version>
 
-        <p6spy.version>1.10.0</p6spy.version>
+        <p6spy.version>1.11.0</p6spy.version>
 
         <caffeine.version>3.2.0</caffeine.version>
     </properties>
