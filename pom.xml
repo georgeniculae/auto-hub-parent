@@ -12,7 +12,7 @@
 
     <groupId>com.swiftwheelshub</groupId>
     <artifactId>swift-wheels-hub-parent</artifactId>
-    <version>0.0.18-SNAPSHOT</version>
+    <version>0.0.19-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Swift Wheels Hub Parent</name>
@@ -167,14 +167,6 @@
             </dependency>
             <!-- END: Atlassian Request Validator dependency -->
 
-            <!-- P6spy dependency -->
-            <dependency>
-                <groupId>com.github.gavlyukovskiy</groupId>
-                <artifactId>p6spy-spring-boot-starter</artifactId>
-                <version>${p6spy.version}</version>
-            </dependency>
-            <!-- END: P6spy dependency -->
-
             <!-- Caffeine dependency -->
             <dependency>
                 <groupId>com.github.ben-manes.caffeine</groupId>
@@ -182,6 +174,14 @@
                 <version>${caffeine.version}</version>
             </dependency>
             <!-- END: Caffeine dependency -->
+
+            <!-- P6spy dependency -->
+            <dependency>
+                <groupId>com.github.gavlyukovskiy</groupId>
+                <artifactId>p6spy-spring-boot-starter</artifactId>
+                <version>${p6spy.version}</version>
+            </dependency>
+            <!-- END: P6spy dependency -->
         </dependencies>
     </dependencyManagement>
 
