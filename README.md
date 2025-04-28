@@ -1,1 +1,1 @@
-# swift-wheels-hub-parent
+# auto-hub-parent

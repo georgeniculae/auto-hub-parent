@@ -10,13 +10,13 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.swiftwheelshub</groupId>
-    <artifactId>swift-wheels-hub-parent</artifactId>
-    <version>0.0.19-SNAPSHOT</version>
+    <groupId>com.autohub</groupId>
+    <artifactId>auto-hub-parent</artifactId>
+    <version>0.0.20-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Swift Wheels Hub Parent</name>
-    <description>Parent for Swift Wheels Hub Microservices</description>
+    <name>Auto Hub Parent</name>
+    <description>Parent for Auto Hub Microservices</description>
 
     <properties>
         <java.version>24</java.version>
@@ -281,15 +281,15 @@
     </repositories>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/georgeniculae/swift-wheels-hub-parent</developerConnection>
+        <developerConnection>scm:git:https://github.com/georgeniculae/auto-hub-parent</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>swift-wheels-hub-parent</name>
-            <url>https://maven.pkg.github.com/georgeniculae/swift-wheels-hub-parent</url>
+            <name>auto-hub-parent</name>
+            <url>https://maven.pkg.github.com/georgeniculae/auto-hub-parent</url>
         </repository>
     </distributionManagement>
 
