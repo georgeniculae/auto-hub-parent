@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.5</version>
+        <version>3.5.0</version>
         <relativePath/>
     </parent>
 
     <groupId>com.autohub</groupId>
     <artifactId>auto-hub-parent</artifactId>
-    <version>0.0.20-SNAPSHOT</version>
+    <version>0.0.21-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Auto Hub Parent</name>
@@ -27,7 +27,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <spring-cloud-dependencies.version>2024.0.1</spring-cloud-dependencies.version>
-        <spring-ai.version>1.0.0-M7</spring-ai.version>
+        <spring-ai.version>1.0.0</spring-ai.version>
 
         <mapstruct.version>1.6.3</mapstruct.version>
 
@@ -44,7 +44,7 @@
 
         <mustache.version>0.9.14</mustache.version>
 
-        <swagger-request-validator.version>2.44.1</swagger-request-validator.version>
+        <swagger-request-validator.version>2.44.8</swagger-request-validator.version>
 
         <p6spy.version>1.11.0</p6spy.version>
 
@@ -268,15 +268,6 @@
         <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/georgeniculae/*</url>
-        </repository>
-
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
         </repository>
     </repositories>
 
