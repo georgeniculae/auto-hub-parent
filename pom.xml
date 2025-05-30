@@ -12,7 +12,7 @@
 
     <groupId>com.autohub</groupId>
     <artifactId>auto-hub-parent</artifactId>
-    <version>0.0.21-SNAPSHOT</version>
+    <version>0.0.22-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Auto Hub Parent</name>
@@ -26,12 +26,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-cloud-dependencies.version>2024.0.1</spring-cloud-dependencies.version>
+        <spring-cloud-dependencies.version>2025.0.0</spring-cloud-dependencies.version>
         <spring-ai.version>1.0.0</spring-ai.version>
 
         <mapstruct.version>1.6.3</mapstruct.version>
 
-        <liquibase.version>4.31.1</liquibase.version>
+        <liquibase.version>4.32.0</liquibase.version>
 
         <debezium.version>3.1.1.Final</debezium.version>
 
