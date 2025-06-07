@@ -12,7 +12,7 @@
 
     <groupId>com.autohub</groupId>
     <artifactId>auto-hub-parent</artifactId>
-    <version>0.0.22-SNAPSHOT</version>
+    <version>0.0.23-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Auto Hub Parent</name>
@@ -33,7 +33,7 @@
 
         <liquibase.version>4.32.0</liquibase.version>
 
-        <debezium.version>3.1.1.Final</debezium.version>
+        <debezium.version>3.1.2.Final</debezium.version>
 
         <poi.version>5.4.1</poi.version>
 
@@ -162,7 +162,7 @@
             <!-- Atlassian Request Validator dependency -->
             <dependency>
                 <groupId>com.atlassian.oai</groupId>
-                <artifactId>swagger-request-validator-spring-web-client</artifactId>
+                <artifactId>swagger-request-validator-core</artifactId>
                 <version>${swagger-request-validator.version}</version>
             </dependency>
             <!-- END: Atlassian Request Validator dependency -->
