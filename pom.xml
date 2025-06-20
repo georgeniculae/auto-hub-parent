@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.1</version>
         <relativePath/>
     </parent>
 
     <groupId>com.autohub</groupId>
     <artifactId>auto-hub-parent</artifactId>
-    <version>0.0.23-SNAPSHOT</version>
+    <version>0.0.24-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Auto Hub Parent</name>
@@ -44,11 +44,11 @@
 
         <mustache.version>0.9.14</mustache.version>
 
-        <swagger-request-validator.version>2.44.8</swagger-request-validator.version>
+        <swagger-request-validator.version>2.44.9</swagger-request-validator.version>
 
         <p6spy.version>1.11.0</p6spy.version>
 
-        <caffeine.version>3.2.0</caffeine.version>
+        <caffeine.version>3.2.1</caffeine.version>
     </properties>
 
     <dependencyManagement>
