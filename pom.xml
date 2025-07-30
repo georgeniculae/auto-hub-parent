@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.3</version>
+        <version>3.5.4</version>
         <relativePath/>
     </parent>
 
     <groupId>com.autohub</groupId>
     <artifactId>auto-hub-parent</artifactId>
-    <version>0.0.25-SNAPSHOT</version>
+    <version>0.0.27-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Auto Hub Parent</name>
@@ -27,17 +27,17 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <spring-cloud-dependencies.version>2025.0.0</spring-cloud-dependencies.version>
-        <spring-ai.version>1.0.0</spring-ai.version>
+        <spring-ai.version>1.0.1</spring-ai.version>
 
         <mapstruct.version>1.6.3</mapstruct.version>
 
-        <liquibase.version>4.32.0</liquibase.version>
+        <liquibase.version>4.33.0</liquibase.version>
 
-        <debezium.version>3.1.2.Final</debezium.version>
+        <debezium.version>3.2.0.Final</debezium.version>
 
         <poi.version>5.4.1</poi.version>
 
-        <keycloak-client.version>26.0.5</keycloak-client.version>
+        <keycloak-client.version>26.0.6</keycloak-client.version>
         <resteasy-client.version>6.2.12.Final</resteasy-client.version>
 
         <springdoc-openapi-starter-webmvc-ui.version>2.7.0</springdoc-openapi-starter-webmvc-ui.version>
@@ -46,9 +46,9 @@
 
         <swagger-request-validator.version>2.44.9</swagger-request-validator.version>
 
-        <p6spy.version>1.11.0</p6spy.version>
+        <p6spy.version>1.12.0</p6spy.version>
 
-        <caffeine.version>3.2.1</caffeine.version>
+        <caffeine.version>3.2.2</caffeine.version>
     </properties>
 
     <dependencyManagement>
