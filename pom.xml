@@ -35,7 +35,11 @@
 
         <debezium.version>3.3.2.Final</debezium.version>
 
+        <hypersistence-utils-hibernate-71.version>3.13.1</hypersistence-utils-hibernate-71.version>
+
         <poi.version>5.5.1</poi.version>
+
+        <spring-retry.version>2.0.12</spring-retry.version>
 
         <keycloak-client.version>26.0.7</keycloak-client.version>
         <resteasy-client.version>7.0.0.Final</resteasy-client.version>
@@ -131,6 +135,14 @@
             </dependency>
             <!-- END: Debezium dependencies -->
 
+            <!-- Hypersistence Utils dependency -->
+            <dependency>
+                <groupId>io.hypersistence</groupId>
+                <artifactId>hypersistence-utils-hibernate-71</artifactId>
+                <version>${hypersistence-utils-hibernate-71.version}</version>
+            </dependency>
+            <!-- END: Hypersistence Utils dependency -->
+
             <!-- Apache POI dependencies -->
             <dependency>
                 <groupId>org.apache.poi</groupId>
@@ -144,6 +156,12 @@
                 <version>${poi.version}</version>
             </dependency>
             <!-- END: Apache POI dependencies -->
+
+            <dependency>
+                <groupId>org.springframework.retry</groupId>
+                <artifactId>spring-retry</artifactId>
+                <version>${spring-retry.version}</version>
+            </dependency>
 
             <!-- Swagger documentation dependency -->
             <dependency>
