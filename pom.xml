@@ -29,6 +29,8 @@
         <spring-cloud-dependencies.version>2025.1.0</spring-cloud-dependencies.version>
         <spring-ai.version>1.1.0</spring-ai.version>
 
+        <testcontainers.version>2.0.2</testcontainers.version>
+
         <mapstruct.version>1.6.3</mapstruct.version>
 
         <liquibase.version>5.0.1</liquibase.version>
@@ -204,22 +206,6 @@
                 <version>${caffeine.version}</version>
             </dependency>
             <!-- END: Caffeine dependency -->
-
-            <!-- Testcontainers dependency -->
-            <dependency>
-                <groupId>org.testcontainers</groupId>
-                <artifactId>junit-jupiter</artifactId>
-                <version>${testcontainers.version}</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.testcontainers</groupId>
-                <artifactId>postgresql</artifactId>
-                <version>${testcontainers.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <!-- END: Testcontainers dependency -->
 
             <!-- P6spy dependency -->
             <dependency>
