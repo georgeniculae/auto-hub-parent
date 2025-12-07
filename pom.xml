@@ -79,6 +79,16 @@
             </dependency>
             <!-- END: Spring AI -->
 
+            <!-- Testcontainers dependency -->
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-bom</artifactId>
+                <version>${testcontainers.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- END: Testcontainers dependency -->
+
             <!-- Mapstruct dependency -->
             <dependency>
                 <groupId>org.mapstruct</groupId>
