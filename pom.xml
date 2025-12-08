@@ -54,8 +54,6 @@
 
         <p6spy.version>2.0.0</p6spy.version>
 
-        <testcontainers.version>1.21.3</testcontainers.version>
-
         <caffeine.version>3.2.3</caffeine.version>
     </properties>
 
