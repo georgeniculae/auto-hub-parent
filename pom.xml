@@ -6,55 +6,55 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.1</version>
+        <version>4.1.1</version>
         <relativePath/>
     </parent>
 
     <groupId>com.autohub</groupId>
     <artifactId>auto-hub-parent</artifactId>
-    <version>0.3.6-SNAPSHOT</version>
+    <version>0.3.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Auto Hub Parent</name>
     <description>Parent for Auto Hub Microservices</description>
 
     <properties>
-        <java.version>25</java.version>
+        <java.version>26</java.version>
         <release>${java.version}</release>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring-cloud-dependencies.version>2025.1.1</spring-cloud-dependencies.version>
-        <spring-ai.version>2.0.0-M2</spring-ai.version>
+        <spring-cloud-dependencies.version>2025.1.3</spring-cloud-dependencies.version>
+        <spring-ai.version>2.0.1</spring-ai.version>
 
-        <testcontainers.version>2.0.3</testcontainers.version>
+        <testcontainers.version>2.0.5</testcontainers.version>
 
         <mapstruct.version>1.6.3</mapstruct.version>
 
-        <liquibase.version>5.0.1</liquibase.version>
+        <liquibase.version>5.0.4</liquibase.version>
 
-        <debezium.version>3.4.1.Final</debezium.version>
+        <debezium.version>3.6.1.Final</debezium.version>
 
-        <hypersistence-utils-hibernate-71.version>3.15.1</hypersistence-utils-hibernate-71.version>
+        <hypersistence-utils-hibernate-73.version>3.15.4</hypersistence-utils-hibernate-73.version>
 
         <poi.version>5.5.1</poi.version>
 
-        <spring-retry.version>2.0.12</spring-retry.version>
+        <keycloak-client.version>26.0.12</keycloak-client.version>
+        <resteasy-client.version>7.0.3.Final</resteasy-client.version>
 
-        <keycloak-client.version>26.0.8</keycloak-client.version>
-        <resteasy-client.version>7.0.1.Final</resteasy-client.version>
-
-        <springdoc-openapi-starter-webmvc-ui.version>3.0.1</springdoc-openapi-starter-webmvc-ui.version>
+        <springdoc-openapi-starter-webmvc-ui.version>3.1.0</springdoc-openapi-starter-webmvc-ui.version>
 
         <mustache.version>0.9.14</mustache.version>
 
-        <swagger-request-validator.version>2.46.0</swagger-request-validator.version>
+        <swagger-request-validator.version>2.46.1</swagger-request-validator.version>
 
-        <p6spy.version>2.0.0</p6spy.version>
+        <caffeine.version>3.2.4</caffeine.version>
 
-        <caffeine.version>3.2.3</caffeine.version>
+        <flying-saucer-pdf-openpdf.version>9.4.0</flying-saucer-pdf-openpdf.version>
+
+        <p6spy.version>2.0.1</p6spy.version>
     </properties>
 
     <dependencyManagement>
@@ -148,8 +148,8 @@
             <!-- Hypersistence Utils dependency -->
             <dependency>
                 <groupId>io.hypersistence</groupId>
-                <artifactId>hypersistence-utils-hibernate-71</artifactId>
-                <version>${hypersistence-utils-hibernate-71.version}</version>
+                <artifactId>hypersistence-utils-hibernate-73</artifactId>
+                <version>${hypersistence-utils-hibernate-73.version}</version>
             </dependency>
             <!-- END: Hypersistence Utils dependency -->
 
@@ -166,12 +166,6 @@
                 <version>${poi.version}</version>
             </dependency>
             <!-- END: Apache POI dependencies -->
-
-            <dependency>
-                <groupId>org.springframework.retry</groupId>
-                <artifactId>spring-retry</artifactId>
-                <version>${spring-retry.version}</version>
-            </dependency>
 
             <!-- Swagger documentation dependency -->
             <dependency>
@@ -204,6 +198,14 @@
                 <version>${caffeine.version}</version>
             </dependency>
             <!-- END: Caffeine dependency -->
+
+            <!-- OpenPDF dependency -->
+            <dependency>
+                <groupId>org.xhtmlrenderer</groupId>
+                <artifactId>flying-saucer-pdf-openpdf</artifactId>
+                <version>${flying-saucer-pdf-openpdf.version}</version>
+            </dependency>
+            <!-- END: OpenPDF dependency -->
 
             <!-- P6spy dependency -->
             <dependency>
@@ -298,12 +300,6 @@
         <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/georgeniculae/*</url>
-        </repository>
-
-        <repository>
-            <id>repository.spring.milestone</id>
-            <name>Spring Milestone Repository</name>
-            <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
 
